@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30C53809116C8D51000BF195 /* AbstractEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537EC116C8D51000BF195 /* AbstractEntity.h */; };
+		30C5380A116C8D51000BF195 /* AbstractEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537ED116C8D51000BF195 /* AbstractEntity.m */; };
+		30C5380B116C8D51000BF195 /* AbstractEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537EE116C8D51000BF195 /* AbstractEvent.h */; };
+		30C5380C116C8D51000BF195 /* AbstractEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537EF116C8D51000BF195 /* AbstractEvent.m */; };
+		30C5380D116C8D51000BF195 /* AbstractTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537F0116C8D51000BF195 /* AbstractTask.h */; };
+		30C5380E116C8D51000BF195 /* AbstractTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537F1116C8D51000BF195 /* AbstractTask.m */; };
+		30C5380F116C8D51000BF195 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537F2116C8D51000BF195 /* Core.h */; };
+		30C53810116C8D51000BF195 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537F3116C8D51000BF195 /* Core.m */; };
+		30C53811116C8D51000BF195 /* EntityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537F4116C8D51000BF195 /* EntityManager.h */; };
+		30C53812116C8D51000BF195 /* EntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537F5116C8D51000BF195 /* EntityManager.m */; };
+		30C53813116C8D51000BF195 /* EventListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537F6116C8D51000BF195 /* EventListener.h */; };
+		30C53814116C8D51000BF195 /* EventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537F7116C8D51000BF195 /* EventManager.h */; };
+		30C53815116C8D51000BF195 /* EventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537F8116C8D51000BF195 /* EventManager.m */; };
+		30C53816116C8D51000BF195 /* EventType.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537F9116C8D51000BF195 /* EventType.h */; };
+		30C53817116C8D51000BF195 /* EventType.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537FA116C8D51000BF195 /* EventType.m */; };
+		30C53818116C8D51000BF195 /* GameState.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537FB116C8D51000BF195 /* GameState.h */; };
+		30C53819116C8D51000BF195 /* GameStateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537FC116C8D51000BF195 /* GameStateManager.h */; };
+		30C5381A116C8D51000BF195 /* GameStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537FD116C8D51000BF195 /* GameStateManager.m */; };
+		30C5381B116C8D51000BF195 /* GameTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537FE116C8D51000BF195 /* GameTimer.h */; };
+		30C5381C116C8D51000BF195 /* GameTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537FF116C8D51000BF195 /* GameTimer.m */; };
+		30C5381D116C8D51000BF195 /* LoggingService.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C53800116C8D51000BF195 /* LoggingService.h */; };
+		30C5381E116C8D51000BF195 /* LoggingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C53801116C8D51000BF195 /* LoggingService.m */; };
+		30C5381F116C8D51000BF195 /* NameService.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C53802116C8D51000BF195 /* NameService.h */; };
+		30C53820116C8D51000BF195 /* NameService.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C53803116C8D51000BF195 /* NameService.m */; };
+		30C53821116C8D51000BF195 /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C53804116C8D51000BF195 /* Service.h */; };
+		30C53822116C8D51000BF195 /* TaskManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C53805116C8D51000BF195 /* TaskManager.h */; };
+		30C53823116C8D51000BF195 /* TaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C53806116C8D51000BF195 /* TaskManager.m */; };
+		30C53824116C8D51000BF195 /* TimeService.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C53807116C8D51000BF195 /* TimeService.h */; };
+		30C53825116C8D51000BF195 /* TimeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C53808116C8D51000BF195 /* TimeService.m */; };
+		AA747D9F0F9514B9006C5449 /* Cogaen_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Cogaen_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30C537EC116C8D51000BF195 /* AbstractEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractEntity.h; sourceTree = "<group>"; };
+		30C537ED116C8D51000BF195 /* AbstractEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractEntity.m; sourceTree = "<group>"; };
+		30C537EE116C8D51000BF195 /* AbstractEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractEvent.h; sourceTree = "<group>"; };
+		30C537EF116C8D51000BF195 /* AbstractEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractEvent.m; sourceTree = "<group>"; };
+		30C537F0116C8D51000BF195 /* AbstractTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractTask.h; sourceTree = "<group>"; };
+		30C537F1116C8D51000BF195 /* AbstractTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractTask.m; sourceTree = "<group>"; };
+		30C537F2116C8D51000BF195 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		30C537F3116C8D51000BF195 /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
+		30C537F4116C8D51000BF195 /* EntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityManager.h; sourceTree = "<group>"; };
+		30C537F5116C8D51000BF195 /* EntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityManager.m; sourceTree = "<group>"; };
+		30C537F6116C8D51000BF195 /* EventListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventListener.h; sourceTree = "<group>"; };
+		30C537F7116C8D51000BF195 /* EventManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventManager.h; sourceTree = "<group>"; };
+		30C537F8116C8D51000BF195 /* EventManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventManager.m; sourceTree = "<group>"; };
+		30C537F9116C8D51000BF195 /* EventType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventType.h; sourceTree = "<group>"; };
+		30C537FA116C8D51000BF195 /* EventType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventType.m; sourceTree = "<group>"; };
+		30C537FB116C8D51000BF195 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		30C537FC116C8D51000BF195 /* GameStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStateManager.h; sourceTree = "<group>"; };
+		30C537FD116C8D51000BF195 /* GameStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStateManager.m; sourceTree = "<group>"; };
+		30C537FE116C8D51000BF195 /* GameTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimer.h; sourceTree = "<group>"; };
+		30C537FF116C8D51000BF195 /* GameTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTimer.m; sourceTree = "<group>"; };
+		30C53800116C8D51000BF195 /* LoggingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggingService.h; sourceTree = "<group>"; };
+		30C53801116C8D51000BF195 /* LoggingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggingService.m; sourceTree = "<group>"; };
+		30C53802116C8D51000BF195 /* NameService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameService.h; sourceTree = "<group>"; };
+		30C53803116C8D51000BF195 /* NameService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameService.m; sourceTree = "<group>"; };
+		30C53804116C8D51000BF195 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		30C53805116C8D51000BF195 /* TaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskManager.h; sourceTree = "<group>"; };
+		30C53806116C8D51000BF195 /* TaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskManager.m; sourceTree = "<group>"; };
+		30C53807116C8D51000BF195 /* TimeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeService.h; sourceTree = "<group>"; };
+		30C53808116C8D51000BF195 /* TimeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeService.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* Cogaen_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cogaen_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libCogaen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCogaen.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libCogaen.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Cogaen */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = Cogaen;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				30C537EC116C8D51000BF195 /* AbstractEntity.h */,
+				30C537ED116C8D51000BF195 /* AbstractEntity.m */,
+				30C537EE116C8D51000BF195 /* AbstractEvent.h */,
+				30C537EF116C8D51000BF195 /* AbstractEvent.m */,
+				30C537F0116C8D51000BF195 /* AbstractTask.h */,
+				30C537F1116C8D51000BF195 /* AbstractTask.m */,
+				30C537F2116C8D51000BF195 /* Core.h */,
+				30C537F3116C8D51000BF195 /* Core.m */,
+				30C537F4116C8D51000BF195 /* EntityManager.h */,
+				30C537F5116C8D51000BF195 /* EntityManager.m */,
+				30C537F6116C8D51000BF195 /* EventListener.h */,
+				30C537F7116C8D51000BF195 /* EventManager.h */,
+				30C537F8116C8D51000BF195 /* EventManager.m */,
+				30C537F9116C8D51000BF195 /* EventType.h */,
+				30C537FA116C8D51000BF195 /* EventType.m */,
+				30C537FB116C8D51000BF195 /* GameState.h */,
+				30C537FC116C8D51000BF195 /* GameStateManager.h */,
+				30C537FD116C8D51000BF195 /* GameStateManager.m */,
+				30C537FE116C8D51000BF195 /* GameTimer.h */,
+				30C537FF116C8D51000BF195 /* GameTimer.m */,
+				30C53800116C8D51000BF195 /* LoggingService.h */,
+				30C53801116C8D51000BF195 /* LoggingService.m */,
+				30C53802116C8D51000BF195 /* NameService.h */,
+				30C53803116C8D51000BF195 /* NameService.m */,
+				30C53804116C8D51000BF195 /* Service.h */,
+				30C53805116C8D51000BF195 /* TaskManager.h */,
+				30C53806116C8D51000BF195 /* TaskManager.m */,
+				30C53807116C8D51000BF195 /* TimeService.h */,
+				30C53808116C8D51000BF195 /* TimeService.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* Cogaen_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* Cogaen_Prefix.pch in Headers */,
+				30C53809116C8D51000BF195 /* AbstractEntity.h in Headers */,
+				30C5380B116C8D51000BF195 /* AbstractEvent.h in Headers */,
+				30C5380D116C8D51000BF195 /* AbstractTask.h in Headers */,
+				30C5380F116C8D51000BF195 /* Core.h in Headers */,
+				30C53811116C8D51000BF195 /* EntityManager.h in Headers */,
+				30C53813116C8D51000BF195 /* EventListener.h in Headers */,
+				30C53814116C8D51000BF195 /* EventManager.h in Headers */,
+				30C53816116C8D51000BF195 /* EventType.h in Headers */,
+				30C53818116C8D51000BF195 /* GameState.h in Headers */,
+				30C53819116C8D51000BF195 /* GameStateManager.h in Headers */,
+				30C5381B116C8D51000BF195 /* GameTimer.h in Headers */,
+				30C5381D116C8D51000BF195 /* LoggingService.h in Headers */,
+				30C5381F116C8D51000BF195 /* NameService.h in Headers */,
+				30C53821116C8D51000BF195 /* Service.h in Headers */,
+				30C53822116C8D51000BF195 /* TaskManager.h in Headers */,
+				30C53824116C8D51000BF195 /* TimeService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* Cogaen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Cogaen" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cogaen;
+			productName = Cogaen;
+			productReference = D2AAC07E0554694100DB518D /* libCogaen.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cogaen" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* Cogaen */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Cogaen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30C5380A116C8D51000BF195 /* AbstractEntity.m in Sources */,
+				30C5380C116C8D51000BF195 /* AbstractEvent.m in Sources */,
+				30C5380E116C8D51000BF195 /* AbstractTask.m in Sources */,
+				30C53810116C8D51000BF195 /* Core.m in Sources */,
+				30C53812116C8D51000BF195 /* EntityManager.m in Sources */,
+				30C53815116C8D51000BF195 /* EventManager.m in Sources */,
+				30C53817116C8D51000BF195 /* EventType.m in Sources */,
+				30C5381A116C8D51000BF195 /* GameStateManager.m in Sources */,
+				30C5381C116C8D51000BF195 /* GameTimer.m in Sources */,
+				30C5381E116C8D51000BF195 /* LoggingService.m in Sources */,
+				30C53820116C8D51000BF195 /* NameService.m in Sources */,
+				30C53823116C8D51000BF195 /* TaskManager.m in Sources */,
+				30C53825116C8D51000BF195 /* TimeService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Cogaen.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cogaen_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Cogaen;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/Cogaen.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Cogaen_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Cogaen;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Cogaen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cogaen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
