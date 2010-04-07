@@ -1,0 +1,518 @@
+TCogaen
+v7
+r0
+t292326745.956378
+cCheck dependencies
+cProcessPCH /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch.gch Cogaen_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEntity.o /Users/Roman/Documents/Cogaen/AbstractEntity.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEvent.o /Users/Roman/Documents/Cogaen/AbstractEvent.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractTask.o /Users/Roman/Documents/Cogaen/AbstractTask.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/Core.o /Users/Roman/Documents/Cogaen/Core.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EntityManager.o /Users/Roman/Documents/Cogaen/EntityManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventManager.o /Users/Roman/Documents/Cogaen/EventManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventType.o /Users/Roman/Documents/Cogaen/EventType.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameStateManager.o /Users/Roman/Documents/Cogaen/GameStateManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameTimer.o /Users/Roman/Documents/Cogaen/GameTimer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/LoggingService.o /Users/Roman/Documents/Cogaen/LoggingService.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/NameService.o /Users/Roman/Documents/Cogaen/NameService.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TaskManager.o /Users/Roman/Documents/Cogaen/TaskManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TimeService.o /Users/Roman/Documents/Cogaen/TimeService.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLibtool /Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/libCogaen.a normal i386
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
+c000000004B98C39700000000000000EE
+t1268302743
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B4DC8000000000027E880
+t1261129160
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B4DAE0000000000001355
+t1261129134
+s4949
+
+N/Users/Roman/Documents/Cogaen/AbstractEntity.h
+c000000004BBC5465000000000000062A
+t1270633573
+s1578
+i<Foundation/Foundation.h>
+i"Core.h"
+
+N/Users/Roman/Documents/Cogaen/AbstractEntity.m
+c000000004BBC54650000000000000835
+t1270633573
+s2101
+i"AbstractEntity.h"
+
+N/Users/Roman/Documents/Cogaen/AbstractEvent.h
+c000000004BBC54650000000000000560
+t1270633573
+s1376
+i<Foundation/Foundation.h>
+
+N/Users/Roman/Documents/Cogaen/AbstractEvent.m
+c000000004BBC546600000000000006BE
+t1270633574
+s1726
+i"AbstractEvent.h"
+i"EventType.h"
+
+N/Users/Roman/Documents/Cogaen/AbstractTask.h
+c000000004BBC54650000000000000697
+t1270633573
+s1687
+i<Foundation/Foundation.h>
+
+N/Users/Roman/Documents/Cogaen/AbstractTask.m
+c000000004BBC5465000000000000072C
+t1270633573
+s1836
+i"AbstractTask.h"
+i"Core.h"
+i"NameService.h"
+
+N/Users/Roman/Documents/Cogaen/Cogaen_Prefix.pch
+c000000004BBC556C00000000000000BC
+t1270633836
+s188
+i<Foundation/Foundation.h>
+
+N/Users/Roman/Documents/Cogaen/Core.h
+c000000004BBC546600000000000006BE
+t1270633574
+s1726
+i<Foundation/Foundation.h>
+i"Service.h"
+
+N/Users/Roman/Documents/Cogaen/Core.m
+c000000004BBC54650000000000000EC3
+t1270633573
+s3779
+i"LoggingService.h"
+i"NameService.h"
+i"TimeSErvice.h"
+i"EventManager.h"
+i"EntityManager.h"
+i"Core.h"
+
+N/Users/Roman/Documents/Cogaen/EntityManager.h
+c000000004BBC54660000000000000799
+t1270633574
+s1945
+i<Foundation/Foundation.h>
+i"Service.h"
+
+N/Users/Roman/Documents/Cogaen/EntityManager.m
+c000000004BBC5466000000000000106C
+t1270633574
+s4204
+i"EntityManager.h"
+i"Core.h"
+i"LoggingService.h"
+i"EventManager.h"
+i"AbstractEntity.h"
+
+N/Users/Roman/Documents/Cogaen/EventListener.h
+c000000004BBC5466000000000000054C
+t1270633574
+s1356
+i<Foundation/Foundation.h>
+
+N/Users/Roman/Documents/Cogaen/EventManager.h
+c000000004BBC5466000000000000089E
+t1270633574
+s2206
+i<Foundation/Foundation.h>
+i"Service.h"
+i"EventListener.h"
+
+N/Users/Roman/Documents/Cogaen/EventManager.m
+c000000004BBC54660000000000001390
+t1270633574
+s5008
+i"Core.h"
+i"EventListener.h"
+i"EventType.h"
+i"AbstractEvent.h"
+i"EventManager.h"
+
+N/Users/Roman/Documents/Cogaen/EventType.h
+c000000004BBC546600000000000005F8
+t1270633574
+s1528
+i<Foundation/Foundation.h>
+
+N/Users/Roman/Documents/Cogaen/EventType.m
+c000000004BBC54660000000000000A5E
+t1270633574
+s2654
+i"EventType.h"
+
+N/Users/Roman/Documents/Cogaen/GameState.h
+c000000004BA417870000000000000102
+t1269045127
+s258
+i<Foundation/Foundation.h>
+
+N/Users/Roman/Documents/Cogaen/GameStateManager.h
+c000000004BA8AF6F00000000000003AB
+t1269346159
+s939
+i<Foundation/Foundation.h>
+i"Service.h"
+i"EventListener.h"
+
+N/Users/Roman/Documents/Cogaen/GameStateManager.m
+c000000004BA8DE3F0000000000000FAD
+t1269358143
+s4013
+i"GameStateManager.h"
+i"GameState.h"
+i"EventManager.h"
+i"EventType.h"
+i"AbstractEvent.h"
+i"Core.h"
+
+N/Users/Roman/Documents/Cogaen/GameTimer.h
+c000000004BBC54650000000000000665
+t1270633573
+s1637
+i<Foundation/Foundation.h>
+
+N/Users/Roman/Documents/Cogaen/GameTimer.m
+c000000004BBC54650000000000000756
+t1270633573
+s1878
+i"GameTimer.h"
+
+N/Users/Roman/Documents/Cogaen/LoggingService.h
+c000000004BBC546500000000000008E8
+t1270633573
+s2280
+i<Foundation/Foundation.h>
+i"Service.h"
+
+N/Users/Roman/Documents/Cogaen/LoggingService.m
+c000000004BBC5465000000000000115D
+t1270633573
+s4445
+i"Core.h"
+i"LoggingService.h"
+
+N/Users/Roman/Documents/Cogaen/NameService.h
+c000000004BBC546500000000000005CB
+t1270633573
+s1483
+i<Foundation/Foundation.h>
+i"Service.h"
+
+N/Users/Roman/Documents/Cogaen/NameService.m
+c000000004BBC54650000000000000735
+t1270633573
+s1845
+i"NameService.h"
+i"Core.h"
+
+N/Users/Roman/Documents/Cogaen/Service.h
+c000000004BBC54650000000000000572
+t1270633573
+s1394
+i<Foundation/Foundation.h>
+
+N/Users/Roman/Documents/Cogaen/TaskManager.h
+c000000004BBC54650000000000000711
+t1270633573
+s1809
+i<Foundation/Foundation.h>
+i"Service.h"
+
+N/Users/Roman/Documents/Cogaen/TaskManager.m
+c000000004BBC54650000000000000C6E
+t1270633573
+s3182
+i"TaskManager.h"
+i"AbstractTask.h"
+i"Core.h"
+i"LoggingService.h"
+
+N/Users/Roman/Documents/Cogaen/TimeService.h
+c000000004BBC54660000000000000674
+t1270633574
+s1652
+i<Foundation/Foundation.h>
+i"Service.h"
+
+N/Users/Roman/Documents/Cogaen/TimeService.m
+c000000004BBC54660000000000000C43
+t1270633574
+s3139
+i"Core.h"
+i"NameService.h"
+i"GameTimer.h"
+i"TimeService.h"
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEntity.o
+t1270633945
+s10128
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEvent.o
+t1270633945
+s7564
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractTask.o
+t1270633945
+s10912
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/Cogaen.LinkFileList
+c000000004BBC55D80000000000000604
+t1270633944
+s1540
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/Core.o
+t1270633945
+s17320
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EntityManager.o
+t1270633945
+s19512
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventManager.o
+t1270633945
+s18064
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventType.o
+t1270633945
+s13124
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameStateManager.o
+t1270633945
+s21216
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameTimer.o
+t1270633945
+s11672
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/LoggingService.o
+t1270633945
+s19552
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/NameService.o
+t1270633945
+s11768
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TaskManager.o
+t1270633945
+s17020
+
+N/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TimeService.o
+t1270633945
+s16052
+
+N/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/libCogaen.a
+t1270633945
+s195624
+
+N/var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch.gch
+t1270633945
+s6071892
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies292326744#292326744#0(0"0(0#1#0"4375320#0"0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEntity.o /Users/Roman/Documents/Cogaen/AbstractEntity.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.205293
+e292326745.368668
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEntity.o
+x/Users/Roman/Documents/Cogaen/AbstractEntity.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Users/Roman/Documents/Cogaen/AbstractEntity.m292326745#292326745#0(0"0(0#0#46"/Users/Roman/Documents/Cogaen/AbstractEntity.m4375320#1759"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/AbstractEntity.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEntity.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEvent.o /Users/Roman/Documents/Cogaen/AbstractEvent.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.206850
+e292326745.370463
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEvent.o
+x/Users/Roman/Documents/Cogaen/AbstractEvent.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@53"Compile /Users/Roman/Documents/Cogaen/AbstractEvent.m292326745#292326745#0(0"0(0#0#45"/Users/Roman/Documents/Cogaen/AbstractEvent.m2529304608#1757"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/AbstractEvent.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractEvent.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractTask.o /Users/Roman/Documents/Cogaen/AbstractTask.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.368811
+e292326745.435430
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractTask.o
+x/Users/Roman/Documents/Cogaen/AbstractTask.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/Roman/Documents/Cogaen/AbstractTask.m292326745#292326745#0(0"0(0#0#44"/Users/Roman/Documents/Cogaen/AbstractTask.m4375320#1755"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/AbstractTask.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/AbstractTask.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/Core.o /Users/Roman/Documents/Cogaen/Core.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.370587
+e292326745.485262
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/Core.o
+x/Users/Roman/Documents/Cogaen/Core.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@44"Compile /Users/Roman/Documents/Cogaen/Core.m292326745#292326745#0(0"0(0#0#36"/Users/Roman/Documents/Cogaen/Core.m2529304608#1739"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/Core.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/Core.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EntityManager.o /Users/Roman/Documents/Cogaen/EntityManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.435569
+e292326745.541209
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EntityManager.o
+x/Users/Roman/Documents/Cogaen/EntityManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@53"Compile /Users/Roman/Documents/Cogaen/EntityManager.m292326745#292326745#0(0"0(0#0#45"/Users/Roman/Documents/Cogaen/EntityManager.m2529304608#1757"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/EntityManager.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EntityManager.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventManager.o /Users/Roman/Documents/Cogaen/EventManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.485393
+e292326745.590066
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventManager.o
+x/Users/Roman/Documents/Cogaen/EventManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@52"Compile /Users/Roman/Documents/Cogaen/EventManager.m292326745#292326745#0(0"0(0#0#44"/Users/Roman/Documents/Cogaen/EventManager.m2529304608#1755"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/EventManager.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventManager.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventType.o /Users/Roman/Documents/Cogaen/EventType.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.541340
+e292326745.625760
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventType.o
+x/Users/Roman/Documents/Cogaen/EventType.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@49"Compile /Users/Roman/Documents/Cogaen/EventType.m292326745#292326745#0(0"0(0#0#41"/Users/Roman/Documents/Cogaen/EventType.m2529304608#1749"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/EventType.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/EventType.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameStateManager.o /Users/Roman/Documents/Cogaen/GameStateManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.590203
+e292326745.738093
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameStateManager.o
+x/Users/Roman/Documents/Cogaen/GameStateManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Users/Roman/Documents/Cogaen/GameStateManager.m292326745#292326745#0(0"0(0#0#48"/Users/Roman/Documents/Cogaen/GameStateManager.m2529304608#1763"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/GameStateManager.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameStateManager.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameTimer.o /Users/Roman/Documents/Cogaen/GameTimer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.625899
+e292326745.697027
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameTimer.o
+x/Users/Roman/Documents/Cogaen/GameTimer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@49"Compile /Users/Roman/Documents/Cogaen/GameTimer.m292326745#292326745#0(0"0(0#0#41"/Users/Roman/Documents/Cogaen/GameTimer.m2529304608#1749"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/GameTimer.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/GameTimer.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/LoggingService.o /Users/Roman/Documents/Cogaen/LoggingService.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.697171
+e292326745.806385
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/LoggingService.o
+x/Users/Roman/Documents/Cogaen/LoggingService.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Users/Roman/Documents/Cogaen/LoggingService.m292326745#292326745#0(0"0(0#0#46"/Users/Roman/Documents/Cogaen/LoggingService.m2529304608#1759"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/LoggingService.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/LoggingService.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/NameService.o /Users/Roman/Documents/Cogaen/NameService.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.738213
+e292326745.813465
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/NameService.o
+x/Users/Roman/Documents/Cogaen/NameService.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/Roman/Documents/Cogaen/NameService.m292326745#292326745#0(0"0(0#0#43"/Users/Roman/Documents/Cogaen/NameService.m2529304608#1753"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/NameService.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/NameService.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TaskManager.o /Users/Roman/Documents/Cogaen/TaskManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.806529
+e292326745.900627
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TaskManager.o
+x/Users/Roman/Documents/Cogaen/TaskManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/Roman/Documents/Cogaen/TaskManager.m292326745#292326745#0(0"0(0#0#43"/Users/Roman/Documents/Cogaen/TaskManager.m2529304608#1753"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/TaskManager.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TaskManager.o0#
+
+CCompileC build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TimeService.o /Users/Roman/Documents/Cogaen/TimeService.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326745.813599
+e292326745.915436
+r1
+xCompileC
+xbuild/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TimeService.o
+x/Users/Roman/Documents/Cogaen/TimeService.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@51"Compile /Users/Roman/Documents/Cogaen/TimeService.m292326745#292326745#0(0"0(0#0#43"/Users/Roman/Documents/Cogaen/TimeService.m2529304608#1753"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -include /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch -c /Users/Roman/Documents/Cogaen/TimeService.m -o /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/TimeService.o0#
+
+CLibtool /Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/libCogaen.a normal i386
+s292326745.915564
+e292326745.956293
+r1
+xLibtool
+x/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/libCogaen.a
+xnormal
+xi386
+o/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF07#2@59"Libtool build/Debug-iphonesimulator/libCogaen.a normal i386292326745#292326745#0(136"/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 0(0#0#0"2529304608#702"    cd /Users/Roman/Documents/Cogaen    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/libtool -static -arch_only i386 -syslibroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -filelist /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Objects-normal/i386/Cogaen.LinkFileList -ObjC -framework Foundation -o /Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/libCogaen.a0#
+
+CProcessPCH /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch.gch Cogaen_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s292326744.518547
+e292326745.205106
+r1
+xProcessPCH
+x/var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch.gch
+xCogaen_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile Cogaen_Prefix.pch292326744#292326745#0(0"0(0#0#47"/Users/Roman/Documents/Cogaen/Cogaen_Prefix.pch4375320#1641"    cd /Users/Roman/Documents/Cogaen    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -mfix-and-continue -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-generated-files.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-own-target-headers.hmap -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-all-target-headers.hmap -iquote /Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/Cogaen-project-headers.hmap -F/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator -I/Users/Roman/Documents/Cogaen/build/Debug-iphonesimulator/include -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources/i386 -I/Users/Roman/Documents/Cogaen/build/Cogaen.build/Debug-iphonesimulator/Cogaen.build/DerivedSources -c /Users/Roman/Documents/Cogaen/Cogaen_Prefix.pch -o /var/folders/Lr/LrCWbmhDHJizcKxqCPzj3++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Cogaen_Prefix-egfioexbpxmlrrgkyrmiaaoceykc/Cogaen_Prefix.pch.gch0#
+
