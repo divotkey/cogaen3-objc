@@ -3,7 +3,6 @@
 //  Squaby
 //
 //  Created by Philipp Rakuschan on 07/04/2010.
-//  Copyright 2010 plan.b-Attersee GmbH. All rights reserved.
 //
 
 #import "EntityDestroyedEvent.h"
