@@ -40,6 +40,7 @@
 @property(assign) double easeTime;
 @property(assign) double targetValue;
 
+- (id) initWithEaseTime: (double) anEaseTime;
 - (void) reset: (double) value;
 - (void) update: (double) dt;
 

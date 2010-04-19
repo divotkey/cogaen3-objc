@@ -32,6 +32,27 @@
 @implementation EaseInOut
 @synthesize curValue, easeTime, targetValue;
 
+- (id) init
+{
+	if (self = [super init]) {
+		[self reset: 0.0];
+		easeTime = 1.0;
+	}
+	
+	return self;
+}
+
+- (id) initWithEaseTime: (double) anEaseTime
+{
+	if (self = [super init]) {
+		[self reset: 0.0];
+		easeTime =anEaseTime;
+	}
+	
+	return self;	
+}
+
+
 - (void) reset: (double) value;
 {
 	curValue = value;
