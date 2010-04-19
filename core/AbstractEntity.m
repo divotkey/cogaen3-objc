@@ -28,7 +28,6 @@
 
 #import "AbstractEntity.h"
 
-
 @implementation AbstractEntity
 
 @synthesize name;
@@ -62,6 +61,13 @@
     [self doesNotRecognizeSelector:_cmd];
     // supposed to be implemented by subclass
 }
+
+- (NSString *) entityType {
+	[self doesNotRecognizeSelector:_cmd];
+    // supposed to be implemented by subclass		
+	return nil;
+}
+
 
 -(BOOL) isOfType: (NSString*) type {
     [self doesNotRecognizeSelector:_cmd];
