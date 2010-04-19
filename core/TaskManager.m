@@ -38,7 +38,7 @@ static NSString* const SERVICE_NAME = @"cogaen.taskmanager";
 
 - (id) init
 {
-	if(self = [super init]) {
+	if( (self = [super init]) ) {
 		tasks = [[NSMutableDictionary alloc] init];
 		newTasks = [[NSMutableArray alloc] init];
 	}
@@ -81,7 +81,8 @@ static NSString* const SERVICE_NAME = @"cogaen.taskmanager";
 	[newTasks removeAllObjects];
 	
 	// update all task which are not dead
-	for(AbstractTask* task in tasks) {
+	NSArray* taskObjects = [tasks allValues];
+	for(AbstractTask* task in taskObjects) {
 		if([task isDead]) {
 			[tasks removeObjectForKey: [task name]];
 			[logger logInfo: [NSString stringWithFormat: @"Task %@ died.", [task name]] fromSource: SERVICE_NAME];

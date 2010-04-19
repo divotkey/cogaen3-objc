@@ -31,6 +31,8 @@
 #import "LoggingService.h"
 #import "EventManager.h"
 #import "AbstractEntity.h"
+#import "EntityCreatedEvent.h"
+#import "EntityDestroyedEvent.h"
 
 static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 
@@ -46,7 +48,7 @@ static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 @implementation EntityManager
 
 - (id) init {
-	if(self = [super init]) {
+	if( (self = [super init]) ) {
 		newEntities = [[NSMutableArray alloc] init];
 		removedEntities = [[NSMutableArray alloc] init];
 		entities = [[NSMutableDictionary alloc] init];
@@ -127,12 +129,14 @@ static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 									   reason:@"An entity with the same name already exists." userInfo:nil]; 
 	}
 	
-	// TODO enqueue EntityCreatedEvent
 	[logger logInfo: [NSString stringWithFormat: @"Engaged entity %@.", entity.name]  fromSource: SERVICE_NAME];
+	EntityCreatedEvent *ece = [[EntityCreatedEvent alloc] initWithEntityID:entity.name entityType:[entity entityType]];
+	[eventManager enqueueEvent:ece];
+	[ece release];
 }
 
 - (void) disengageEntity: (AbstractEntity*) entity {
-	if(![entities objectForKey: entity.name]) { // does entities contain an entity with this name?
+	if([entities objectForKey: entity.name]) { // does entities contain an entity with this name?
 		[entities removeObjectForKey: entity.name];
 		[entity disengage];
 	}
@@ -141,8 +145,10 @@ static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 									   reason:@"No entity with this name."  userInfo:nil]; 
 	}
 	
-	// TODO enqueue EntityRemovedEvent
-	// TODO log entityRemovedEvent
+	[logger logInfo: [NSString stringWithFormat: @"Disengaged entity %@.", entity.name]  fromSource: SERVICE_NAME];
+	EntityDestroyedEvent *ede = [[EntityDestroyedEvent alloc] initWithEntityID:entity.name];
+	[eventManager enqueueEvent:ede];
+	[ede release];
 }
 
 
