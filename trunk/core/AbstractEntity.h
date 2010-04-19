@@ -48,6 +48,7 @@
 - (void) update;
 
 - (BOOL) isOfType: (NSString*) type;
+- (NSString *) entityType;
 
 
 @end
