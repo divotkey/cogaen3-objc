@@ -30,9 +30,6 @@
 #import "EventType.h"
 
 
-static EventType* EVENT_TYPE = nil;
-
-
 @implementation AbstractEvent
 
 + (void) initialize

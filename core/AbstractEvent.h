@@ -30,6 +30,7 @@
 
 @class EventType;
 
+static EventType* EVENT_TYPE = nil;
 
 @interface AbstractEvent : NSObject {
 

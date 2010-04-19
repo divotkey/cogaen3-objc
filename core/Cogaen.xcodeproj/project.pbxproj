@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		301ABD3F117C59E800FDED44 /* EntityDestroyedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 301ABD3D117C59E800FDED44 /* EntityDestroyedEvent.m */; };
+		301ABD40117C59E800FDED44 /* EntityDestroyedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 301ABD3E117C59E800FDED44 /* EntityDestroyedEvent.h */; };
+		301ABD47117C5A3200FDED44 /* EntityCreatedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 301ABD45117C5A3200FDED44 /* EntityCreatedEvent.m */; };
+		301ABD48117C5A3200FDED44 /* EntityCreatedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 301ABD46117C5A3200FDED44 /* EntityCreatedEvent.h */; };
 		30C53809116C8D51000BF195 /* AbstractEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537EC116C8D51000BF195 /* AbstractEntity.h */; };
 		30C5380A116C8D51000BF195 /* AbstractEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C537ED116C8D51000BF195 /* AbstractEntity.m */; };
 		30C5380B116C8D51000BF195 /* AbstractEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 30C537EE116C8D51000BF195 /* AbstractEvent.h */; };
@@ -41,6 +45,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		301ABD3D117C59E800FDED44 /* EntityDestroyedEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityDestroyedEvent.m; sourceTree = "<group>"; };
+		301ABD3E117C59E800FDED44 /* EntityDestroyedEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityDestroyedEvent.h; sourceTree = "<group>"; };
+		301ABD45117C5A3200FDED44 /* EntityCreatedEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityCreatedEvent.m; sourceTree = "<group>"; };
+		301ABD46117C5A3200FDED44 /* EntityCreatedEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityCreatedEvent.h; sourceTree = "<group>"; };
 		30C537EC116C8D51000BF195 /* AbstractEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractEntity.h; sourceTree = "<group>"; };
 		30C537ED116C8D51000BF195 /* AbstractEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractEntity.m; sourceTree = "<group>"; };
 		30C537EE116C8D51000BF195 /* AbstractEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractEvent.h; sourceTree = "<group>"; };
@@ -117,6 +125,10 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				301ABD45117C5A3200FDED44 /* EntityCreatedEvent.m */,
+				301ABD46117C5A3200FDED44 /* EntityCreatedEvent.h */,
+				301ABD3D117C59E800FDED44 /* EntityDestroyedEvent.m */,
+				301ABD3E117C59E800FDED44 /* EntityDestroyedEvent.h */,
 				30C537EC116C8D51000BF195 /* AbstractEntity.h */,
 				30C537ED116C8D51000BF195 /* AbstractEntity.m */,
 				30C537EE116C8D51000BF195 /* AbstractEvent.h */,
@@ -182,6 +194,8 @@
 				30C53821116C8D51000BF195 /* Service.h in Headers */,
 				30C53822116C8D51000BF195 /* TaskManager.h in Headers */,
 				30C53824116C8D51000BF195 /* TimeService.h in Headers */,
+				301ABD40117C59E800FDED44 /* EntityDestroyedEvent.h in Headers */,
+				301ABD48117C5A3200FDED44 /* EntityCreatedEvent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +255,8 @@
 				30C53820116C8D51000BF195 /* NameService.m in Sources */,
 				30C53823116C8D51000BF195 /* TaskManager.m in Sources */,
 				30C53825116C8D51000BF195 /* TimeService.m in Sources */,
+				301ABD3F117C59E800FDED44 /* EntityDestroyedEvent.m in Sources */,
+				301ABD47117C5A3200FDED44 /* EntityCreatedEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
