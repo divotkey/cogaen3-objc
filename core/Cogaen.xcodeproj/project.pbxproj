@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30096709117D8F43008B1088 /* EaseInOut.h in Headers */ = {isa = PBXBuildFile; fileRef = 30096707117D8F43008B1088 /* EaseInOut.h */; };
+		3009670A117D8F43008B1088 /* EaseInOut.m in Sources */ = {isa = PBXBuildFile; fileRef = 30096708117D8F43008B1088 /* EaseInOut.m */; };
 		301ABD3F117C59E800FDED44 /* EntityDestroyedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 301ABD3D117C59E800FDED44 /* EntityDestroyedEvent.m */; };
 		301ABD40117C59E800FDED44 /* EntityDestroyedEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 301ABD3E117C59E800FDED44 /* EntityDestroyedEvent.h */; };
 		301ABD47117C5A3200FDED44 /* EntityCreatedEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 301ABD45117C5A3200FDED44 /* EntityCreatedEvent.m */; };
@@ -45,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30096707117D8F43008B1088 /* EaseInOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseInOut.h; sourceTree = "<group>"; };
+		30096708117D8F43008B1088 /* EaseInOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseInOut.m; sourceTree = "<group>"; };
 		301ABD3D117C59E800FDED44 /* EntityDestroyedEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityDestroyedEvent.m; sourceTree = "<group>"; };
 		301ABD3E117C59E800FDED44 /* EntityDestroyedEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntityDestroyedEvent.h; sourceTree = "<group>"; };
 		301ABD45117C5A3200FDED44 /* EntityCreatedEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityCreatedEvent.m; sourceTree = "<group>"; };
@@ -125,41 +129,115 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				30096729117D90C0008B1088 /* Core */,
+				30096715117D909A008B1088 /* State */,
+				30096714117D9089008B1088 /* Logging */,
+				30096713117D907F008B1088 /* Name */,
+				30096712117D9063008B1088 /* Time */,
+				30096711117D9050008B1088 /* Task */,
+				30096710117D902D008B1088 /* Event */,
+				3009670B117D8FB4008B1088 /* Entity */,
+				300966F9117D8EF9008B1088 /* Math */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		300966F9117D8EF9008B1088 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				30096707117D8F43008B1088 /* EaseInOut.h */,
+				30096708117D8F43008B1088 /* EaseInOut.m */,
+			);
+			name = Math;
+			sourceTree = "<group>";
+		};
+		3009670B117D8FB4008B1088 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				30C537ED116C8D51000BF195 /* AbstractEntity.m */,
+				30C537F4116C8D51000BF195 /* EntityManager.h */,
+				30C537F5116C8D51000BF195 /* EntityManager.m */,
 				301ABD45117C5A3200FDED44 /* EntityCreatedEvent.m */,
 				301ABD46117C5A3200FDED44 /* EntityCreatedEvent.h */,
 				301ABD3D117C59E800FDED44 /* EntityDestroyedEvent.m */,
 				301ABD3E117C59E800FDED44 /* EntityDestroyedEvent.h */,
 				30C537EC116C8D51000BF195 /* AbstractEntity.h */,
-				30C537ED116C8D51000BF195 /* AbstractEntity.m */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		30096710117D902D008B1088 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				30C537F9116C8D51000BF195 /* EventType.h */,
+				30C537FA116C8D51000BF195 /* EventType.m */,
 				30C537EE116C8D51000BF195 /* AbstractEvent.h */,
 				30C537EF116C8D51000BF195 /* AbstractEvent.m */,
-				30C537F0116C8D51000BF195 /* AbstractTask.h */,
-				30C537F1116C8D51000BF195 /* AbstractTask.m */,
-				30C537F2116C8D51000BF195 /* Core.h */,
-				30C537F3116C8D51000BF195 /* Core.m */,
-				30C537F4116C8D51000BF195 /* EntityManager.h */,
-				30C537F5116C8D51000BF195 /* EntityManager.m */,
 				30C537F6116C8D51000BF195 /* EventListener.h */,
 				30C537F7116C8D51000BF195 /* EventManager.h */,
 				30C537F8116C8D51000BF195 /* EventManager.m */,
-				30C537F9116C8D51000BF195 /* EventType.h */,
-				30C537FA116C8D51000BF195 /* EventType.m */,
-				30C537FB116C8D51000BF195 /* GameState.h */,
-				30C537FC116C8D51000BF195 /* GameStateManager.h */,
-				30C537FD116C8D51000BF195 /* GameStateManager.m */,
-				30C537FE116C8D51000BF195 /* GameTimer.h */,
-				30C537FF116C8D51000BF195 /* GameTimer.m */,
-				30C53800116C8D51000BF195 /* LoggingService.h */,
-				30C53801116C8D51000BF195 /* LoggingService.m */,
-				30C53802116C8D51000BF195 /* NameService.h */,
-				30C53803116C8D51000BF195 /* NameService.m */,
-				30C53804116C8D51000BF195 /* Service.h */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		30096711117D9050008B1088 /* Task */ = {
+			isa = PBXGroup;
+			children = (
 				30C53805116C8D51000BF195 /* TaskManager.h */,
 				30C53806116C8D51000BF195 /* TaskManager.m */,
+				30C537F0116C8D51000BF195 /* AbstractTask.h */,
+				30C537F1116C8D51000BF195 /* AbstractTask.m */,
+			);
+			name = Task;
+			sourceTree = "<group>";
+		};
+		30096712117D9063008B1088 /* Time */ = {
+			isa = PBXGroup;
+			children = (
+				30C537FE116C8D51000BF195 /* GameTimer.h */,
+				30C537FF116C8D51000BF195 /* GameTimer.m */,
 				30C53807116C8D51000BF195 /* TimeService.h */,
 				30C53808116C8D51000BF195 /* TimeService.m */,
 			);
-			name = Classes;
+			name = Time;
+			sourceTree = "<group>";
+		};
+		30096713117D907F008B1088 /* Name */ = {
+			isa = PBXGroup;
+			children = (
+				30C53802116C8D51000BF195 /* NameService.h */,
+				30C53803116C8D51000BF195 /* NameService.m */,
+			);
+			name = Name;
+			sourceTree = "<group>";
+		};
+		30096714117D9089008B1088 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				30C53800116C8D51000BF195 /* LoggingService.h */,
+				30C53801116C8D51000BF195 /* LoggingService.m */,
+			);
+			name = Logging;
+			sourceTree = "<group>";
+		};
+		30096715117D909A008B1088 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				30C537FB116C8D51000BF195 /* GameState.h */,
+				30C537FC116C8D51000BF195 /* GameStateManager.h */,
+				30C537FD116C8D51000BF195 /* GameStateManager.m */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		30096729117D90C0008B1088 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				30C537F2116C8D51000BF195 /* Core.h */,
+				30C537F3116C8D51000BF195 /* Core.m */,
+				30C53804116C8D51000BF195 /* Service.h */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		32C88DFF0371C24200C91783 /* Other Sources */ = {
@@ -196,6 +274,7 @@
 				30C53824116C8D51000BF195 /* TimeService.h in Headers */,
 				301ABD40117C59E800FDED44 /* EntityDestroyedEvent.h in Headers */,
 				301ABD48117C5A3200FDED44 /* EntityCreatedEvent.h in Headers */,
+				30096709117D8F43008B1088 /* EaseInOut.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +336,7 @@
 				30C53825116C8D51000BF195 /* TimeService.m in Sources */,
 				301ABD3F117C59E800FDED44 /* EntityDestroyedEvent.m in Sources */,
 				301ABD47117C5A3200FDED44 /* EntityCreatedEvent.m in Sources */,
+				3009670A117D8F43008B1088 /* EaseInOut.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
