@@ -143,7 +143,7 @@ static NSString* const SERVICE_NAME = @"cogaen.eventmanager";
 
 - (void) removeListener: (id <EventListener>) aListener
 {
-	// This code is inefficient in temrs of memory usage, because each time we allocate a new NSEnumator object
+	// This code is inefficient in terms of memory usage, because each time we allocate a new NSEnumator object
 	// which is attached to the current autorelease pool
 	/*
 	NSEnumerator *enumerator = [listeners objectEnumerator];
