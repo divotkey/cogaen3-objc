@@ -55,6 +55,7 @@ static NSString* const LOGGIN_SOURCE = @"core";
 	if (self = [super init]) {
 		services = [[NSMutableDictionary alloc] init];
 		updateables = [[NSMutableArray alloc] init];
+		suspended = [[NSMutableArray alloc] init];
 		time = 0.0;
 		deltaTime = 0.0;
 	}
@@ -83,6 +84,7 @@ static NSString* const LOGGIN_SOURCE = @"core";
 }
 
 - (void) dealloc {
+	[suspended release];
 	[updateables release];
 	[services release];
 	[super dealloc];
@@ -137,6 +139,47 @@ static NSString* const LOGGIN_SOURCE = @"core";
 	for (id <Service> service in updateables) {
 		[service update];
 	}
+}
+
+- (void) suspendService: (NSString*) name {
+	
+	id <Service> serviceToSuspend = nil;
+	for (id <Service> service in updateables) {
+		if ([[service getName] isEqual: name]) {
+			serviceToSuspend = service;
+			break;
+		}
+	}
+	
+	if (serviceToSuspend != nil) {
+		[updateables removeObject: serviceToSuspend];
+		[suspended addObject: serviceToSuspend];
+
+		LoggingService* logger = [LoggingService getInstance: self];		
+		NSString *msg = [[NSString alloc] initWithFormat: @"service %@ suspended", [serviceToSuspend getName]];
+		[logger logDebug: msg fromSource: LOGGIN_SOURCE];
+		[msg release];
+	}
+}
+
+- (void) resumeService: (NSString*) name {
+	id <Service> serviceToResume = nil;
+	for (id <Service> service in suspended) {
+		if ([[service getName] isEqual: name]) {
+			serviceToResume = service;
+			break;
+		}
+	}	
+	
+	if (serviceToResume != nil) {
+		[suspended removeObject: serviceToResume];
+		[updateables addObject: serviceToResume];
+		
+		LoggingService* logger = [LoggingService getInstance: self];		
+		NSString *msg = [[NSString alloc] initWithFormat: @"service %@ resumed", [serviceToResume getName]];
+		[logger logDebug: msg fromSource: LOGGIN_SOURCE];
+		[msg release];
+	}	
 }
 
 @end
