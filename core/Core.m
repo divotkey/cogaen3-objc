@@ -157,7 +157,7 @@ static NSString* const LOGGIN_SOURCE = @"core";
 
 		LoggingService* logger = [LoggingService getInstance: self];		
 		NSString *msg = [[NSString alloc] initWithFormat: @"service %@ suspended", [serviceToSuspend getName]];
-		[logger logDebug: msg fromSource: LOGGIN_SOURCE];
+		[logger logInfo: msg fromSource: LOGGIN_SOURCE];
 		[msg release];
 	}
 }
@@ -177,7 +177,7 @@ static NSString* const LOGGIN_SOURCE = @"core";
 		
 		LoggingService* logger = [LoggingService getInstance: self];		
 		NSString *msg = [[NSString alloc] initWithFormat: @"service %@ resumed", [serviceToResume getName]];
-		[logger logDebug: msg fromSource: LOGGIN_SOURCE];
+		[logger logInfo: msg fromSource: LOGGIN_SOURCE];
 		[msg release];
 	}	
 }
