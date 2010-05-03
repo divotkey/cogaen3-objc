@@ -35,6 +35,7 @@
 @interface Core : NSObject {
 	NSMutableDictionary* services;
 	NSMutableArray* updateables;
+	NSMutableArray* suspended;
 	double deltaTime;
 	double time;
 }
@@ -49,5 +50,7 @@
 - (id <Service>) getService: (NSString*) name;
 - (BOOL) hasService: (NSString*) name;
 - (void) update: (double) dt;
+- (void) suspendService: (NSString*) name;
+- (void) resumeService: (NSString*) name;
 
 @end
