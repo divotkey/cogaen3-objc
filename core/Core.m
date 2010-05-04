@@ -67,7 +67,7 @@ static NSString* const LOGGIN_SOURCE = @"core";
 {
 	if (self = [super init]) {
 		services = [[NSMutableDictionary alloc] init];
-		updateables = [[NSMutableArray alloc] init];		
+		updateables = [[NSMutableArray alloc] init]; 		
 		suspended = [[NSMutableArray alloc] init];
 		time = 0.0;
 		deltaTime = 0.0;
