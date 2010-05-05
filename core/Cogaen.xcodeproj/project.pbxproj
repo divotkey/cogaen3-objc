@@ -156,13 +156,13 @@
 			isa = PBXGroup;
 			children = (
 				30C537ED116C8D51000BF195 /* AbstractEntity.m */,
+				30C537EC116C8D51000BF195 /* AbstractEntity.h */,
 				30C537F4116C8D51000BF195 /* EntityManager.h */,
 				30C537F5116C8D51000BF195 /* EntityManager.m */,
 				301ABD45117C5A3200FDED44 /* EntityCreatedEvent.m */,
 				301ABD46117C5A3200FDED44 /* EntityCreatedEvent.h */,
 				301ABD3D117C59E800FDED44 /* EntityDestroyedEvent.m */,
 				301ABD3E117C59E800FDED44 /* EntityDestroyedEvent.h */,
-				30C537EC116C8D51000BF195 /* AbstractEntity.h */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
