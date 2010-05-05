@@ -45,9 +45,17 @@
     if (self = [super init]) {
 		core = aCore;
 		name = aName;
+		[name retain];
 	}
+	
 	return self;
 }
+
+- (void) dealloc {
+	[name release];
+	[super dealloc];
+}
+
 
 -(void) engage {
     [self doesNotRecognizeSelector:_cmd];
