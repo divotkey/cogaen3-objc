@@ -54,7 +54,8 @@
 -(void) addEntity: (AbstractEntity*) entity;
 -(void) removeEntity: (AbstractEntity*) entity;
 -(void) removeEntityWithName: (NSString*) entityName;
-
+- (void)removeAllEntities;
+	
 -(AbstractEntity*) getEntity: (NSString*) entityName;
 -(int) numOfEntities;
 
