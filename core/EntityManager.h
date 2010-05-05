@@ -47,8 +47,9 @@
 	EventManager*		eventManager;
 }
 
-+ (EntityManager*) getInstance: (Core*) core;
-- (void) initialize: (Core*) aCore;
++(EntityManager*) getInstance: (Core*) core;
++(NSString*) name;
+-(void) initialize: (Core*) aCore;
 -(void) update;
 
 -(void) addEntity: (AbstractEntity*) entity;
