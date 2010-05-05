@@ -135,6 +135,10 @@ static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 	return (EntityManager*) [core getService: SERVICE_NAME];
 }
 
++(NSString*) name {
+	return SERVICE_NAME;
+}
+
 // private category:
 
 - (void) engageEntity: (AbstractEntity*) entity {
