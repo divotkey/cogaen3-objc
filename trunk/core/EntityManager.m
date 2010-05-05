@@ -111,6 +111,22 @@ static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 	return [entities objectForKey: entityName];
 }
 
+- (void)removeAllEntities {
+	[newEntities removeAllObjects];
+	
+	for (AbstractEntity *e in removedEntities) {
+		[e disengage];
+	}
+	[removedEntities removeAllObjects];
+	
+	NSArray *keys = [entities allKeys];
+	for (NSString *key in keys) {
+		AbstractEntity *e = [entities objectForKey:key];
+		[e disengage];
+	}
+	[entities removeAllObjects];
+}
+
 -(int) numOfEntities {
 	return [entities count];
 }
