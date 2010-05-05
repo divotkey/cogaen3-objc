@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'CogaenTest' target in the 'CogaenTest' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
