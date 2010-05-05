@@ -39,7 +39,6 @@
     NSString*   name;
 }
 
-
 @property(readonly) NSString* name;
 
 
