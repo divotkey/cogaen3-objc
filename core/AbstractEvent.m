@@ -51,4 +51,8 @@ static EventType* EVENT_TYPE = nil;
 	return EVENT_TYPE;
 }
 
+- (BOOL) isOfType: (EventType*) type {
+	return [[self eventType] isEqual: type];
+}
+
 @end
