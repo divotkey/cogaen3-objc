@@ -38,5 +38,6 @@
 
 + (EventType*) eventType;
 - (EventType*) eventType;
+- (BOOL) isOfType: (EventType*) type;
 
 @end

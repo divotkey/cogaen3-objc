@@ -61,5 +61,6 @@
 	
 - (AbstractEntity*) getEntity: (NSString*) entityName;
 - (int) numOfEntities;
+-(void) removeAllEntities;
 
 @end
