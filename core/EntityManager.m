@@ -37,6 +37,7 @@
 #import "EntityDestroyedEvent.h"
 
 static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
+static NSString* const LOGGING_SROUCE = @"EntityManager";
 
 
 @interface EntityManager ()
@@ -51,9 +52,10 @@ static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 
 - (id) init {
 	if( (self = [super init]) ) {
+		entities = [[NSMutableDictionary alloc] init];
 		newEntities = [[NSMutableArray alloc] init];
 		removedEntities = [[NSMutableArray alloc] init];
-		entities = [[NSMutableDictionary alloc] init];
+		engagedEntities = [[NSMutableArray alloc] init];
 	}
 	
 	return self;
@@ -62,6 +64,7 @@ static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 
 - (void) dealloc
 {
+	[engagedEntities release];
 	[newEntities release];
 	[removedEntities release];
 	[entities release];
@@ -79,52 +82,62 @@ static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 }
 
 - (void) update {
+	// engage new entities
 	for(AbstractEntity* entity in newEntities) {
 		[self engageEntity: entity];
 	}
 	[newEntities removeAllObjects];
-	
+
+	// disengage and remove old entities
 	for(AbstractEntity* entity in removedEntities) {
 		[self disengageEntity: entity];
+		[entities removeObjectForKey: [entity name]];
 	}
 	[removedEntities removeAllObjects];
-	
-	NSEnumerator *enumerator = [entities objectEnumerator];
-	for (AbstractEntity* entity = [enumerator nextObject]; entity != nil; entity = [enumerator nextObject]) {
+
+	// update engaged entities
+	for(AbstractEntity* entity in engagedEntities) {
 		[entity update];
-	}
+	}	
+}
+
+- (BOOL) hasEntity: (NSString*) name {
+	return [entities objectForKey:name] != nil;
 }
 
 -(void) addEntity: (AbstractEntity*) entity {
-	[newEntities addObject: entity];
+	if ([entities objectForKey: [entity name]] != nil) {
+		[NSException raise:@"EntityAlreadyExistsException" format:@"entity with name %@ already exists", [entity name]];
+	}
+	[entities setObject:entity forKey:[entity name]];
+	[newEntities addObject:entity];
 }
 
 -(void) removeEntity: (AbstractEntity*) entity {
-	[removedEntities addObject:entity];
+	// we use removeEntityWithName in order to ensure that an
+	// exception is thrown if specified entity does not exist
+	[self removeEntityWithName:[entity name]];
 }
 
 -(void) removeEntityWithName: (NSString*) entityName {
-	[removedEntities addObject:[self getEntity: entityName]];
+	AbstractEntity* entity = [self getEntity: entityName];
+	if (![removedEntities containsObject:entity]) {
+		[removedEntities addObject:entity];
+	}
 }
 
 -(AbstractEntity*) getEntity: (NSString*) entityName {
-	return [entities objectForKey: entityName];
+	AbstractEntity* entity = [entities objectForKey: entityName];
+	if (entity == nil) {
+		[NSException raise:@"EntityDoesNotExistException" format:@"Entity with name %@ does not exist", entityName];
+	}
+	return entity;
 }
 
 - (void)removeAllEntities {
-	[newEntities removeAllObjects];
-	
-	for (AbstractEntity *e in removedEntities) {
-		[e disengage];
+	for(NSString* entityName in entities) {
+		[self removeEntityWithName:entityName];
 	}
-	[removedEntities removeAllObjects];
-	
-	NSArray *keys = [entities allKeys];
-	for (NSString *key in keys) {
-		AbstractEntity *e = [entities objectForKey:key];
-		[e disengage];
-	}
-	[entities removeAllObjects];
 }
 
 -(int) numOfEntities {
@@ -142,37 +155,28 @@ static NSString* const SERVICE_NAME = @"cogaen.entitymanager";
 // private category:
 
 - (void) engageEntity: (AbstractEntity*) entity {
-	if(![entities objectForKey: entity.name]) { // does entities already contain an entity with this name?
-		[entities setObject: entity forKey: entity.name];
-		[entity engage];
-	}
-	else {
-		@throw [NSException exceptionWithName: [NSString stringWithFormat: @"Unable to add the entity %@.", entity.name] 
-									   reason:@"An entity with the same name already exists." userInfo:nil]; 
-	}
+	[entity engage];
+	[engagedEntities addObject: entity];
+
+	EntityCreatedEvent *entityCreated = [[EntityCreatedEvent alloc] initWithEntityID:entity.name entityType:[entity entityType]];
+	[eventManager enqueueEvent:entityCreated];
+	[entityCreated release];
 	
-	[logger logInfo: [NSString stringWithFormat: @"Engaged entity %@.", entity.name]  fromSource: SERVICE_NAME];
-	EntityCreatedEvent *ece = [[EntityCreatedEvent alloc] initWithEntityID:entity.name entityType:[entity entityType]];
-	[eventManager enqueueEvent:ece];
-	[ece release];
+	[logger logInfo: [NSString stringWithFormat: @"Engaged entity %@.", entity.name]  fromSource: LOGGING_SROUCE];
 }
 
 - (void) disengageEntity: (AbstractEntity*) entity {
-	if([entities objectForKey: entity.name]) { // does entities contain an entity with this name?
-		[entities removeObjectForKey: entity.name];
-		[entity disengage];
-	}
-	else {
-		@throw [NSException exceptionWithName: [NSString stringWithFormat: @"Unable to remove entity %@.", entity.name] 
-									   reason:@"No entity with this name."  userInfo:nil]; 
-	}
-	
-	[logger logInfo: [NSString stringWithFormat: @"Disengaged entity %@.", entity.name]  fromSource: SERVICE_NAME];
-	EntityDestroyedEvent *ede = [[EntityDestroyedEvent alloc] initWithEntityID:entity.name];
-	[eventManager enqueueEvent:ede];
-	[ede release];
+	// disengage entity
+	[entity disengage];
+	[engagedEntities removeObject: entity];
+		
+	// euqneue EntityDestroyed event
+	EntityDestroyedEvent *entityDestroyed = [[EntityDestroyedEvent alloc] initWithEntityID:entity.name];
+	[eventManager enqueueEvent:entityDestroyed];
+	[entityDestroyed release];
+
+	// add log entry
+	[logger logInfo: [NSString stringWithFormat: @"Disengaged entity %@.", entity.name]  fromSource: LOGGING_SROUCE];	
 }
-
-
 
 @end
