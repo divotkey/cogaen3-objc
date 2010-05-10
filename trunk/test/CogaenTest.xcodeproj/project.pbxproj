@@ -40,7 +40,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 3060CB641190173200DDE8A3 /* Cogaen.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D /* Cogaen */;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = Cogaen;
 		};
 /* End PBXContainerItemProxy section */
