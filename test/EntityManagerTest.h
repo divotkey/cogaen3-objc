@@ -42,5 +42,16 @@
 - (void) tearDown;
 - (void) testGetName;
 - (void) testAddEntity;
+- (void) testAddEntityTwice;
+- (void) testEntityOwnership;
+- (void) testGetEntity;
+- (void) testRemoveEntity;
+
+- (void) testRemoveEntityWithoutUpdate;
+- (void) testRemoveEntityTwice;
+- (void) testRemoveUnknownEntity;
+- (void) testEntityUpdate;
+- (void) testRemoveAllEntities;
+- (void) testRemoveAllWithUnengagedEntities;
 
 @end
