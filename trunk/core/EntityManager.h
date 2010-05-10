@@ -38,29 +38,28 @@
 
 
 @interface EntityManager : NSObject <Service> {
+    NSMutableDictionary*    entities;
     NSMutableArray*         newEntities;
     NSMutableArray*         removedEntities;
-    NSMutableDictionary*    entities;
+    NSMutableArray*         engagedEntities;
     
     Core*				core;
 	LoggingService*		logger;
 	EventManager*		eventManager;
 }
 
-+(EntityManager*) getInstance: (Core*) core;
-+(NSString*) name;
--(void) initialize: (Core*) aCore;
--(void) update;
++ (EntityManager*) getInstance: (Core*) core;
++ (NSString*) name;
+- (void) initialize: (Core*) aCore;
+- (void) update;
 
--(void) addEntity: (AbstractEntity*) entity;
--(void) removeEntity: (AbstractEntity*) entity;
--(void) removeEntityWithName: (NSString*) entityName;
-- (void)removeAllEntities;
+- (void) addEntity: (AbstractEntity*) entity;
+- (BOOL) hasEntity: (NSString*) name;
+- (void) removeEntity: (AbstractEntity*) entity;
+- (void) removeEntityWithName: (NSString*) entityName;
+- (void) removeAllEntities;
 	
--(AbstractEntity*) getEntity: (NSString*) entityName;
--(int) numOfEntities;
-
-
-
+- (AbstractEntity*) getEntity: (NSString*) entityName;
+- (int) numOfEntities;
 
 @end

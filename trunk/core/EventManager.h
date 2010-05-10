@@ -58,9 +58,4 @@
 
 - (void) enqueueEvent: (AbstractEvent*) anEvent;
 
-// PRIVATE:
-// -(void) fireEvent: (Event*) event;
-// -(void) clearEventQueue: (int) idx;
-// -(void) swapEventList;
-
 @end
