@@ -1,0 +1,1 @@
+Cogaen is a Component-Based Game Engine that aids the developer in efficiently creating computer games.
